@@ -1,0 +1,140 @@
+@font-face {
+   font-family: "Roboto";
+   src: url("../assets/fonts/Roboto-Regular/Roboto-Regular.eot");
+   src: url("../assets/fonts/Roboto-Regular/Roboto-Regular.eot?#iefix")
+       format("embedded-opentype"),
+     url("../assets/fonts/Roboto-Regular/Roboto-Regular.woff2") format("woff2"),
+     url("../assets/fonts/Roboto-Regular/Roboto-Regular.woff") format("woff"),
+     url("../assets/fonts/Roboto-Regular/Roboto-Regular.ttf") format("truetype"),
+     url("../assets/fonts/Roboto-Regular/Roboto-Regular.svg#Roboto-Regular")
+       format("svg");
+ }
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   font-family: 'Roboto' sans-serif;
+}
+main{
+width: 100%;
+height: 100vh;
+background-color: #d1d1d1;
+background-image:  url(../assets/images/b.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+background-position: bottom center;
+
+display: flex;
+justify-content: center;
+align-items: center;
+}
+h1{
+   color: #123456;
+}
+main .wrapper{ 
+ width: 450px;
+ background-color: #d1d1d1;
+ border-radius: 10px;
+ padding: 35px 40px;
+ backdrop-filter: blur(3px);
+ box-shadow: 0 20px 35px rgba(0, 0.8, 0.9, 0.9);
+ animation: 1s ease-out 0s 1 slideInFromLeft;
+}
+@keyframes slideInFromLeft {
+   0% {
+     transform: translateY(-150%);
+
+   }
+   100% {
+     transform: translateY(0);
+   }
+ }
+main .wrapper h1{
+   font-variant: small-caps;
+   font-size: 45px;
+   text-align: center;
+   margin-bottom: 15px;
+}
+main .wrapper form .single-input input{
+   width: 100%;
+   padding: 14px 10px;
+   border: 1px solid rgb(0, 0, 0,0.352);
+   background-color: transparent;
+   margin-bottom: 10px;
+   font-size: 18px;
+   outline: none;
+   border-radius: 8px;
+   color: #123456;
+}
+main .wrapper form .single-input{
+   position: relative;
+}
+label{
+   position: absolute;
+   left: 0;
+   padding: 14px 10px;
+   font-size: 16px;
+   pointer-events: none;
+   text-transform: uppercase;
+   color: rgba(34, 34, 34, 0.555);
+   transition: all 0.5s;
+}
+main .wrapper form .single-input input:valid ~ label,
+main .wrapper form .single-input input:focus ~ label{
+   color: #123456;
+   transform: translateX(10px) translateY(-7px);
+   font-size: 0.75em;
+   font-weight:bolder;
+   padding: 2px 10px;
+   background-color:  #d1d1d1;
+   border-left: 2px solid #123456;
+   border-right: 2px solid #123456;
+   letter-spacing: 0.2em;
+}
+main .wrapper form .single-input input:valid,
+main .wrapper form .single-input input:focus{
+
+border: 2px solid #123456;
+}
+.input-icon{
+   position: absolute;
+   bottom: 50%;
+   right: 10px;
+}
+.sub-btn{
+   text-align: center;
+}
+.sub-btn button{
+   padding: 13px 30px;
+   outline: none;
+   border: none;
+   font-size: 18px;
+   font-weight: bold;
+   cursor: pointer;
+   border-radius: 10px;
+   color: rgba(245, 222, 179, 0.945);
+   background-color: #123456;
+   margin-bottom: 5px;
+}
+.account-have{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   font-size: 14px;
+   margin-top: 10px;
+}
+.account-have a{
+   color: rgba(8, 4, 4, 0.596);
+   text-decoration: none;
+}
+.account-have a:hover{
+   color: #123456;
+   transform: scale(1.2);
+}
+.signform{
+   display: none;
+}

@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>template</title>
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="content/css/vendors/bootstrap.min.css" />
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="content/css/vendors/all.min.css" />
+   <!-- swiper -->
+   <link rel="stylesheet" href="content/css/vendors/swiper-bundle.min.css">
+  <!-- style -->
+  <link rel="stylesheet" href="content/css/style.css" />
+</head>
+
+<body>
+  <!-- uppernav -->
+  <div class="upper-nav bg-light">
+    <div class="container">
+      <div class="row justify-content-between">
+        <div class="col-md-4 col-12 d-md-block">
+          <a href="mailto:info@company.com" class="me-3 text-decoration-none text-black-50">
+            <i class="fa-regular fa-envelope"></i>
+            mailto:info@company.com
+          </a>
+          <a href="tel:+97406512" class="text-decoration-none text-black-50">
+            <i class="fa-solid fa-phone"></i>
+            +97406512
+          </a>
+        </div>
+        <div class="col-md-4 col-12 d-md-block">
+          <p class="text-decoration-none text-black-50">
+            <i class="fa-solid fa-clock"></i>opening hours
+            <b>Mon-Fri 9:00 am to 9:00 pm</b>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- lower nav -->
+  <nav class="navbar navbar-expand-lg fs-5 first-bg-nav position-sticky change-nav" id="navbar-example2">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="content/assets/images/logo/logo-white.png" alt="Logo" class="logo-img">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
+          <li class="nav-item">
+            <a class="nav-link p-0 mx-2 active fw-bold first-color" aria-current="page" href="index.html"
+              id="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link p-0 mx-2 text-capitalize fw-bold first-color" aria-current="page" href="#services"
+              id="nav-link">services</a>
+          </li>
+          <li class="nav-item p-0 dropdown">
+            <a class="nav-link p-0 mx-2 dropdown-toggle text-capitalize fw-bold first-color" href="#categories"
+              role="button" data-bs-toggle="dropdown" aria-expanded="false" id="nav-link">
+              categories
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="product.html">Hatchback</a></li>
+              <li><a class="dropdown-item" href="product.html">Sedan</a></li>
+              <li><a class="dropdown-item" href="product.html">cabriolet</a></li>
+              <li><a class="dropdown-item" href="product.html">SUV</a></li>
+              <li><a class="dropdown-item" href="product.html">coupe</a></li>
+              <li><a class="dropdown-item" href="product.html">pickup</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link p-0 mx-2 text-capitalize fw-bold first-color" href="accessory.html"
+              id="nav-link">accsecories</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link p-0 mx-2 text-capitalize fw-bold first-color" href="#about" id="nav-link">about us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link p-0 mx-2 text-capitalize fw-bold first-color" href="#contact" id="nav-link">contact</a>
+          </li>
+          <li class="nav-item view-cart-list">
+            <a class="nav-link p-0 mx-2 text-capitalize fw-bold first-color position-relative" href="#" id="nav-link">
+              <i class="fa-solid fa-cart-shopping cart-icon"></i>
+              <span class="position-absolute top-0 start-100 
+            translate-middle badge rounded-pill bg-danger font-badge">
+              </span>
+              <div class="nav-link__cart-product position-absolute">
+                <div></div>
+                <a href="cart.html" class="btn hover-btn">view all products</a>
+              </div>
+            </a>
+          </li>
+          <li class="nav-item">
+            <button type="button" class="btn nav-link">
+              <a id="log-btn" class="btn iconLog first-color" id="nav-link">
+                <span class=" first-color" id="nav-link">
+                  <i class="fa-solid fa-user fs-5 p-0"></i>
+                </span>
+                <div class="small-modal d-none first-color" id="nav-link"></div>
+              </a>
+            </button>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="logoutbtn nav-link btn fw-bold rounded-pill iconLog first-color" id="nav-link">Log
+              out</a>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+
+  <!-- start header -->
+  <main data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%"
+    data-bs-smooth-scroll="true" class="scrollspy-example bg-light" tabindex="0">
+    <header>
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+        <div class="carousel-slide">
+          <div class="carousel-inner">
+            <div class="carousel-item item-slider-1 active">
+              <div class="container">
+                <div class="header__content d-flex align-items-end py-5">
+                  <div class="text-white">
+                    <p class="header__content__sub-title text-uppercase">ford Mustang 2022</p>
+                    <h1 class="header__content__title w-75 fw-bold">
+                      We have all <span class="text-warning">Categories</span>
+                      , so don't wait let us help
+                    </h1>
+                    <div class="header__content__btns">
+                      <a href="#categories"
+                        class="btn mainbg-color hover-btn text-white rounded-pill py-2 px-4">
+                        Take a look at the categories
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item item-slider-2">
+              <div class="container">
+                <div class="header__content d-flex align-items-end py-5">
+                  <div class="text-white">
+                    <span class="header__content__sub-title">BEST OFFERS
+                      <span class="text-warning">FOR YOU </span>
+                    </span>
+                    <h1 class="header__content__title w-100 fw-bold">
+                      DON'T DREAM IT ,<span class="text-warning">DRIVE IT</span>
+                    </h1>
+                    <div class="header__content__btns">
+                      <a href="#categories"
+                        class="btn mainbg-color hover-btn text-white rounded-pill py-2 px-4">
+                        Take a look at the categories
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item item-slider-3">
+              <div class="container">
+                <div class="header__content d-flex align-items-end py-5">
+                  <div class="text-white">
+                    <p class="header__content__sub-title">All <span class="text-warning">installment</span>systems don't
+                      miss the opportunity
+                    </p>
+                    <h1 class="header__content__title w-75 fw-bold">
+                      auto maintenance & repair services
+                    </h1>
+                    <div class="header__content__btns d-flex flex-row align-items-center">
+                      <a href="#categories"
+                        class="btn mainbg-color hover-btn text-white rounded-pill py-2 px-4">
+                        Take a look at the categories
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="discount m-auto p-4 rounded-3 mt-4">
+        <div class="overlay"></div>
+        <div class="discount__car-icon">
+          <span><i class="fa-solid fa-car"></i></span>
+          <p class="text-capitalize fw-semibold w-100">
+            save your money with <b>Discount Specials</b>
+            In the case of <b>cash</b> purchase
+          </p>
+        </div>
+
+        <div class="discount__date">
+          <span class="days"></span>
+          <span class="hours"></span>
+          <span class="minutes"></span>
+          <span class="seconds"></span>
+        </div>
+      </div>
+    </header>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2 class="main-color text-center mt-5">New Arrivals</h2>
+          <div class="slide-container swiper">
+            <div class="slide-content">
+              <div class="card-wrapper swiper-wrapper">
+                <div class="img-card swiper-slide">
+                  <div class="image-content">
+                    <div class="card-image">
+                      <img src="content/assets/images/categories/bgaustin.jpg" alt="austin" class="card-img">
+                    </div>
+                    <div class="card-content text-center">
+                      <h2 class="name fs-4 fw-bold">austin martin</h2>
+                      <p class="desc text-secondary fw-semibold">A twin-turbocharged 5.2-liter V-12 engine makes 715 horsepower and
+                        drives the rear wheels
+                        through an eight-speed automatic</p>
+                        <span class="text-secondary">Starting Price of: <b class="text-black">$139,000 MSRP</b></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="img-card swiper-slide">
+                  <div class="image-content">
+                    <div class="card-image">
+                      <img src="content/assets/images/categories/2022-ford-mustang-shelby-gt500-02-1636734552.jpg" alt="austin" class="card-img">
+                    </div>
+                    <div class="card-content text-center">
+                      <h2 class="name fs-4 fw-bold">2022 Ford Mustang Shelby GT500</h2>
+                      <p class="desc text-secondary fw-semibold">monstrous 760-hp supercharged V-8 launches the coupe with eye-watering force,
+                        and its immense grip causes sensations of euphoria or nausea or both.</p>
+                        <span class="text-secondary">Starting Price of: <b class="text-black">$139,000 MSRP</b></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="img-card swiper-slide">
+                  <div class="image-content">
+                    <div class="card-image">
+                      <img src="content/assets/images/categories/tes2.jpg" alt="austin" class="card-img">
+                    </div>
+                    <div class="card-content text-center">
+                      <h2 class="name fs-4 fw-bold">Tesla Roadster</h2>
+                      <p class="desc text-secondary fw-semibold">An all-electric vehicle, the Tesla 
+                        Roadster is the quickest car in the world, 
+                        with record-setting acceleration, range and performance. Reserve yours today.</p>
+                        <span class="text-secondary">Starting Price of: <b class="text-black">$200,000MSRP</b></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="img-card swiper-slide">
+                  <div class="image-content">
+                    <div class="card-image">
+                      <img src="content/assets/images/categories/civic.jpg" alt="civic" class="card-img">
+                    </div>
+                    <div class="card-content text-center">
+                      <h2 class="name fs-4 fw-bold">Honda Civic Type R</h2>
+                      <p class="desc text-secondary fw-semibold">A twin-turbocharged 5.2-liter V-12 engine makes 715 horsepower and
+                        drives the rear wheels
+                        through an eight-speed automatic</p>
+                        <span class="text-secondary">Starting Price of: <b class="text-black">$44,390 MSRP</b></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="img-card swiper-slide">
+                  <div class="image-content">
+                    <div class="card-image">
+                      <img src="content/assets/images/categories/golf.jpg" alt="austin" class="card-img">
+                    </div>
+                    <div class="card-content text-center">
+                      <h2 class="name fs-4 fw-bold">2023 Volkswagen Golf R</h2>
+                      <p class="desc text-secondary fw-semibold">A twin-turbocharged 5.2-liter V-12 engine makes 715 horsepower and
+                        drives the rear wheels
+                        through an eight-speed automatic</p>
+                        <span class="text-secondary">Starting Price of: <b class="text-black">$45,835 MSRP</b></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="img-card swiper-slide">
+                  <div class="image-content">
+                    <div class="card-image">
+                      <img src="content/assets/images/categories/cn.jpg" alt="cn" class="card-img">
+                    </div>
+                    <div class="card-content text-center">
+                      <h2 class="name fs-4 fw-bold">2023 Hyundai Elantra N</h2>
+                      <p class="desc text-secondary fw-semibold">The Hyundai Elantra N inherits its turbocharged 2.0-liter four-cylinder from.
+                        That engine makes a stout 275-hp in the Veloster N, the Elantra N boasts a 286-hp rating</p>
+                        <span class="text-secondary">Starting Price of: <b class="text-black">$33,745 MSRP</b></span>
+                    </div>
+                  </div>
+                </div>
+                
+              
+                
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+
+    <!-- start services -->
+    <section id="services">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="text-center p-2 mt-5 main-color fw-bold">Our Services</h2>
+          </div>
+          <div class="col-lg-4 col-md-6 col-12 mt-5">
+            <div class="card m-auto" style="width: 18rem;">
+              <img src="content/assets/images/services/Parts and components.png" class="card-img-top"
+                alt="part and components">
+              <div class="card-body">
+                <p class="card-text fw-bold">Parts && Components</p>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn book-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  Book Now
+                </button>
+
+
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-12 mt-5">
+            <div class="card m-auto" style="width: 18rem;">
+              <img src="content/assets/images/services/repaire and maintainance.png" class="card-img-top"
+                alt="repaire and maintainance">
+              <div class="card-body">
+                <p class="card-text fw-bold">Repair && Maintenance</p>
+                <button type="button" class="btn book-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  Book Now
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-12 mt-5">
+            <div class="card m-auto" style="width: 18rem;">
+              <img src="content/assets/images/services/Tyres and batteries.png" class="card-img-top"
+                alt="Tyres and batteries">
+              <div class="card-body">
+                <p class="card-text fw-bold">Tyres && Batteries</p>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn book-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  Book Now
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-12 mt-5">
+            <div class="card m-auto" style="width: 18rem;">
+              <img src="content/assets/images/services/Electronics and systems.png" class="card-img-top"
+                alt="Electronics and systems">
+              <div class="card-body">
+                <p class="card-text fw-bold">Electronics && Systems</p>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn book-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  Book Now
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-12 mt-5">
+            <div class="card m-auto" style="width: 18rem;">
+              <img src="content/assets/images/services/Autotech-Body-and-paint-sector.png" class="card-img-top"
+                alt="Autotech-Body-and-paint-sector">
+              <div class="card-body">
+                <p class="card-text fw-bold">Accessories && Customizing</p>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn book-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  Book Now
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-12 mt-5">
+            <div class="card m-auto" style="width: 18rem;">
+              <img src="content/assets/images/services/oil-and-lubricant-260-200.png" class="card-img-top"
+                alt="oil-and-lubricant">
+              <div class="card-body">
+                <p class="card-text fw-bold">Oil && Lubricants</p>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn book-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  Book Now
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5 fw-bold" id="exampleModalLabel">Book your service with US</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <form>
+
+                    <div class="modal-body__input-group">
+                      <!-- <p class="fw-bold fs-5">name:</p> -->
+                      <input type="text" placeholder="Your Name" class="w-100 mb-2">
+                      <input type="text" placeholder="Your Phone Number" class="w-100 mb-2">
+                      <input type="text" placeholder="Your Car Model" class="w-100">
+                    </div>
+
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Book your service</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end row -->
+        </div>
+      </div>
+    </section>
+    <!-- end services -->
+    <!-- start categories -->
+    <section id="categories" class="categories mt-5">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="text-center p-2 mt-5 main-color fw-bold mb-4">Our categories</h2>
+          </div>
+          <div class="col-lg-6 col-12">
+            <div class="shape-img position-relative w-75 mt-4">
+              <img src="content/assets/images/categories/shape.png" alt="shape" class="w-100">
+              <div class="categories__img">
+                <img src="content/assets/images/categories/brandsss.jpg" alt="brands">
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-12">
+            <div class="categories__item mt-4">
+              <h2 class="fw-bold ">Car Brands Full List</h2>
+              <p class="fw-semibold lh-lg">Here is our compiled list of all automotive manufacturers over the years. We
+                probably missed a few but
+                for car guys these are the ones to know. We decided to split the list into popular car makers and then
+                alphabetically to make finding things a little easier. Note that this car brand list includes companies
+                that are still around as well as those that are long gone. The only real criteria is that the automotive
+                brand made a car that we consider worth of "car enthusiast" status. Please let us know if there are any
+                car companies missing or if we have got anything wrong. We hope you find this useful.</p>
+              <a href="product.html"
+                class="btn mainbg-color hover-btn text-white rounded-pill py-2 px-4 text-capitalize">let's take a look
+                in our categories</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+    <!-- end categories -->
+    <!-- start about -->
+    <section id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="text-capitalize text-center p-2 mt-5 main-color fw-bold">about us</h2>
+          </div>
+          
+          <div class="col-lg-6">
+            <div class="our-advantages">
+              <h4 class="main-color text-center mt-5">OUR ADVANTGES</h4>
+              <a class="collapse-btn" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button"
+                aria-expanded="false" aria-controls="multiCollapseExample1">
+                <i class="fa-solid fa-gear"></i>
+                <span>How to schedule a service online?</span>
+              </a>
+              <div class="collapse multi-collapse" id="multiCollapseExample1">
+                <div class="main-collapse">
+                  What’s your car worth?
+                  Receive the absolute best value for your trade-in vehicle.
+                  We even handle all paperwork. Schedule your appointment today!
+                </div>
+              </div>
+
+              <a class="collapse-btn" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2"
+                aria-expanded="false" aria-controls="multiCollapseExample2">
+                <i class="fa-solid fa-key"></i>
+                <span>Are You looking for a new car?</span>
+              </a>
+              <div class="collapse multi-collapse" id="multiCollapseExample2">
+                <div class="main-collapse">
+                  Maecenas consectetur nulla dolor, ac porttitor nunc hendrerit quis.
+                  Proin vitae rhoncus purus,
+                  id commodo massa. Aliquam erat volutpat.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <h4 class="main-color mt-5">
+              CUSTOMER TESTIMONIALS
+            </h4>
+            <div id="carouselExampleControls" class="carousel slide mt-5" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active ">
+                  <div class="carousel-item__conten  d-flex gap-3">
+                    <img src="content/assets/images/about/about-us-1-213x142-212x141.jpg" class="d-block w-50"
+                      width="212" height="141" alt="...">
+                    <div class="carousel-item__content__box">
+                      <h5>Motors is absolutely wonderful!</h5>
+
+                      <p>I can’t believe it was this easy to sell my car to you guys.
+                        You definitely made this as simple as advertised.
+                        Whenever my family moves back to the states,
+                        we would certainly love to use Motors theme again! </p>
+                      <div class="testimonial-name">
+                        <p>Michael Doe</p>
+                        <span class="fw-bold"><i class="fa-solid fa-car mx-3"></i>2020 Honda-CHR</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item ">
+                  <div class="carousel-item__conten  d-flex gap-3">
+                    <img src="content/assets/images/about/testimonials-211x141.jpg" class="d-block w-50" width="212"
+                      height="141" alt="...">
+                    <div class="carousel-item__content">
+                      <h5>Motors is absolutely wonderful!</h5>
+
+                      <p>I can’t believe it was this easy to sell my car to you guys.
+                        You definitely made this as simple as advertised.
+                        Whenever my family moves back to the states,
+                        we would certainly love to use Motors theme again! </p>
+                      <div class="testimonial-name">
+                        <p>Baxter Ion</p>
+                        <span class="fw-bold"><i class="fa-solid fa-car mx-3"></i>2020 Honda-Civic LX</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-btns d-flex justify-content-end gap-4 align-items-center">
+                <button class="prev-btn" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                  <span class=""></span>
+                  <i class="fa-solid fa-chevron-left" aria-hidden="true"></i>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="next-btn" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                  <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+
+
+
+
+
+
+
+          </div>
+
+          <div class="col-12">
+            <div class="about__bg-image">
+
+              <div class="about__bg-img__items d-flex align-items-center justify-content-evenly">
+                <div class="happy-clients">
+                  <div class="num">
+                    <div class="happy-clients__num__icon">
+                      <i class="fa-solid fa-users"></i>
+                    </div>
+                    <span class="increase" data-goal="925">00</span>
+                  </div>
+                  <div class="happy-clients__text mt-5 fs-3 fw-bolder">
+                    HAPPY CLIENTS
+                  </div>
+                </div>
+                <div class="happy-clients">
+                  <div class="num">
+                    <div class="happy-clients__num__icon">
+                      <i class="fa-solid fa-car"></i>
+                    </div>
+                    <span class="increase" data-goal="1350">00</span>
+                  </div>
+                  <div class="happy-clients__text mt-5 fs-3 fw-bolder">
+                    VEHICLES IN STOCK
+                  </div>
+                </div>
+                <div class="happy-clients">
+                  <div class="num">
+                    <div class="happy-clients__num__icon">
+                      <i class="fa-solid fa-award"></i>
+                    </div>
+                    <span class="increase" data-goal="720">00</span>
+                  </div>
+                  <div class="happy-clients__text mt-5 fs-3 fw-bolder">
+                    AWARDS
+                  </div>
+                </div>
+                <div class="happy-clients">
+                  <div class="num">
+                    <div class="happy-clients__num__icon">
+                      <i class="fa-solid fa-user-tie"></i>
+                    </div>
+                    <span class="increase" data-goal="50">00</span>
+                  </div>
+                  <div class="happy-clients__text mt-5 fs-3 fw-bolder">
+                    BRANCHES
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- end about -->
+    <!-- start contact -->
+    <section id="contact">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#3a3a3a" fill-opacity="1"
+          d="M0,160L48,133.3C96,107,192,53,288,74.7C384,96,480,192,576,229.3C672,267,768,245,864,234.7C960,224,1056,224,1152,192C1248,160,1344,96,1392,64L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+        </path>
+      </svg>
+      <div class="contact-container first-bg-nav first-color">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 col-12">
+              <div class="contact-container__form">
+                <h2 class="fw-semibold mb-5">For complaints and suggestions, contact us</h2>
+                <form action="">
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <input type="text" placeholder="Your Name" class="w-100 p-2 rounded-3">
+                    </div>
+                    <div class="col-lg-6">
+                      <input type="email" placeholder="Your Email" class="w-100 p-2 rounded-3">
+                    </div>
+                    <div class="col-12">
+                      <textarea id="" cols="30" rows="7" class="w-100 mt-5 p-4 rounded-3"
+                        placeholder="Enter your message"></textarea>
+                      <button type="submit"
+                        class="border-0 mainbg-color text-white rounded-pill py-2 px-4 w-100 mt-3 text-capitalize fs-5">submit</button>
+                    </div>
+                  </div>
+                </form>
+
+              </div>
+            </div>
+            <div class="col-lg-6 col-12">
+              <div class="contact-container__thumb">
+                <div class="contact-container__thumb__info">
+                  <h2>1340 Atwater St, Detroit, MI 48207</h2>
+                  <a href="tel: 240-480-9600" class="text-decoration-none first-color fs-2">
+                    <i class="fa-solid fa-phone"></i>
+                    240-480-9600
+                  </a>
+                  <a href="mailto:info@company.com" class="footer-link text-decoration-none fs-2 first-color">
+                    <i class="fa-solid fa-envelope"></i>
+                    info@company.com
+                  </a>
+                  <iframe class="google-map mt-4 rounded-4 "
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4063.103580426464!2d-83.0264337484065!3d42.33402597908653!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x883b2cce05ddf4f1%3A0xcc0559eb3fda00c9!2sDetroit%20Riverwalk%2C%20Detroit%2C%20MI!5e1!3m2!1sen!2sus!4v1657814406289!5m2!1sen!2sus"
+                    width="100%" height="300" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end contact -->
+    <footer class="first-bg-nav">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-4 col-12">
+
+            <div class="footer__logo border-bottom mt-4 pb-4">
+             <a href="index.html">
+              <img src="content/assets/images/logo/logo-white.png" class="w-100" alt="Logo">
+             </a>
+            </div>
+            <h4 class="mt-4 text-white-50">We are innovative, automotive-focused dreamers with a desire to be pioneers
+              in this space.</h4>
+
+          </div>
+          <div class="col-lg-3 col-md-4 col-12">
+            <h4 class="text-center mt-3 ">Our Linkes</h4>
+            <div class="footer__links d-flex flex-column align-items-center text-center fs-5 p-4">
+              <a href="index.html">Home</a>
+              <a href="#services">services</a>
+              <a href="#Categories">Categories</a>
+              <a href="accessory.html">Accessories</a>
+              <a href="#About">About US</a>
+              <a href="#Contact">Contact</a>
+              <a href="cart.html">Cart</a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-12">
+            <div class="container">
+              <div class="row">
+                <div class="col-12">
+                  <h4 class="text-center mt-4">Photo Gallery</h4>
+
+                  <div class="footer__photogallery d-flex flex-wrap justify-content-center gap-2">
+                    <div class="footer__photogallery__img">
+                      <img src="content/assets/images/footer/o.jpg" alt="photo gallery" width="50" height="50">
+                    </div>
+                    <div class="footer__photogallery__img">
+                      <img src="content/assets/images/footer/qq.jpg" alt="photo gallery" width="50" height="50">
+                    </div>
+                    <div class="footer__photogallery__img">
+                      <img src="content/assets/images/footer/v.jpg" alt="photo gallery" width="50" height="50">
+                    </div>
+                    <div class="footer__photogallery__img">
+                      <img src="content/assets/images/footer/w.jpg" alt="photo gallery" width="50" height="50">
+                    </div>
+                    <div class="footer__photogallery__img">
+                      <img src="content/assets/images/footer/cadillac.jpg" alt="photo gallery" width="50" height="50">
+                    </div>
+                    <div class="footer__photogallery__img">
+                      <img src="content/assets/images/footer/mercedes.jpg" alt="photo gallery" width="50" height="50">
+                    </div>
+                    <div class="footer__photogallery__img">
+                      <img src="content/assets/images/footer/nissan_altima.jpeg" alt="photo gallery" width="50"
+                        height="50">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-lg-3 col-md-4 col-12">
+            <div class="footer__social-icon">
+              <div class="container">
+                <div class="row">
+                  <h4 class="text-center mt-4 mb-4">SOCIAL NETWORK</h4>
+                  <ul class="ul-social-icon list-unstyled d-flex justify-content-around fs-2">
+                    <li><a href="https://www.facebook.com/" class="facebook"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="https://www.instagram.com/" class="instagram"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://www.twitter.com/" class="twitter"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="https://www.youtube.com/" class="youtube"><i class="fab fa-youtube"></i></a></li>
+                </div>
+              </div>
+              </ul>
+
+
+
+            </div>
+            <div class="footer__form-subscribe text-center">
+              <h4>subscribe</h4>
+              <form>
+                <div class="input-field position-relative">
+                  <input type="email" name="EMAIL" placeholder="Enter Your E-mail" required>
+                  <button type="submit" class="subscribe-btn">
+                    <i class="fa-solid fa-wifi"></i>
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </footer>
+  </main>
+
+  <script src="content/js/vendors/swiper.bundle.js"></script>
+  <script src="content/js/products.js"></script>
+  <script src="content/js/main.js"></script>
+  <script src="content/js/cart.js"></script>
+  <script src="content/js/vendors/alert.js"></script>
+  <script src="content/js/vendors/all.min.js"></script>
+  <script src="content/js/vendors/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

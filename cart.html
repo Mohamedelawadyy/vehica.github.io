@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="content/css/vendors/bootstrap.min.css" />
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="content/css/vendors/all.min.css" />
+  <!-- style -->
+  <link rel="stylesheet" href="content/css/style.css" />
+</head>
+
+<body>
+  <!-- uppernav -->
+  <div class="upper-nav bg-light">
+    <div class="container">
+      <div class="row justify-content-between">
+        <div class="col-md-4 col-12 d-md-block">
+          <a href="mailto:info@company.com" class="me-3 text-decoration-none text-black-50">
+            <i class="fa-regular fa-envelope"></i>
+            mailto:info@company.com
+          </a>
+          <a href="tel:+97406512" class="text-decoration-none text-black-50">
+            <i class="fa-solid fa-phone"></i>
+            +97406512
+          </a>
+        </div>
+        <div class="col-md-4 col-12 d-md-block">
+          <p class="text-decoration-none text-black-50">
+            <i class="fa-solid fa-clock"></i>opening hours
+            <b>Mon-Fri 9:00 am to 9:00 pm</b>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- lower nav -->
+  <nav class="navbar navbar-expand-lg fs-5 first-bg-nav position-sticky change-nav" id="navbar-example2">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="content/assets/images/logo/logo-white.png" alt="Logo" class="logo-img">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
+          <li class="nav-item">
+            <a class="nav-link p-0 mx-2 fw-bold first-color" aria-current="page" href="index.html"
+              id="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link p-0 mx-2 text-capitalize fw-bold first-color" aria-current="page" href="index.html#services"
+              id="nav-link">services</a>
+          </li>
+          <li class="nav-item p-0 dropdown">
+            <a class="nav-link p-0 mx-2 active dropdown-toggle text-capitalize fw-bold first-color" href="#categories"
+              role="button" data-bs-toggle="dropdown" aria-expanded="false" id="nav-link">
+              categories
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="product.html">Hatchback</a></li>
+              <li><a class="dropdown-item" href="product.html">Sedan</a></li>
+              <li><a class="dropdown-item" href="product.html">cabriolet</a></li>
+              <li><a class="dropdown-item" href="product.html">SUV</a></li>
+              <li><a class="dropdown-item" href="product.html">Coupe</a></li>
+              <li><a class="dropdown-item" href="product.html">pickup</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link p-0 mx-2 text-capitalize fw-bold first-color" href="accessory.html"
+              id="nav-link">accsecories</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link p-0 mx-2 text-capitalize fw-bold first-color" href="index.html#about" id="nav-link">about us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link p-0 mx-2 text-capitalize fw-bold first-color" href="index.html#contact" id="nav-link">contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link p-0 mx-2 text-capitalize fw-bold first-color" href="#" id="nav-link">
+              <i class="fa-solid fa-cart-shopping cart-icon"></i>
+              <span class="position-absolute top-0 start-100 
+            translate-middle badge rounded-pill bg-danger font-badge">
+              </span>
+              <div class="nav-link__cart-product position-absolute">
+                <div></div>
+                <a href="cart.html" class="btn hover-btn">view all products</a>
+              </div>
+            </a>
+          </li>
+          <li class="nav-item">
+            <button type="button" class="btn nav-link">
+              <a href="form.html" id="log-btn" class="btn iconLog first-color" id="nav-link">
+                <span class=" first-color" id="nav-link">
+                  <i class="fa-solid fa-user fs-5 p-0"></i>
+                </span>
+
+                <div class="small-modal d-none first-color" id="nav-link"></div>
+              </a>
+            </button>
+          </li>
+          <li class="nav-item">
+            <a href="" class="logoutbtn nav-link btn fw-bold rounded-pill iconLog first-color" id="nav-link">Log out</a>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <section class="cart">
+    <section class="container content-section">
+      <h2 class="section-header text-center mt-5">CART</h2>
+      <div class="cart-row">
+        <span class="cart-item cart-header cart-column">ITEM</span>
+        <span class="cart-price cart-header cart-column">PRICE</span>
+        <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+      </div>
+      <div class="cart-items">
+        <!-- <div class="cart-row">
+          <div class="cart-item cart-column">
+            <img class="cart-item-image" src="content/assets/images/products/audi-rs-sedan.webp" width="100"
+              height="100">
+            <span class="cart-item-title">T-Shirt</span>
+          </div>
+          <span class="cart-price cart-column">$19.99</span>
+          <div class="cart-quantity cart-column">
+            <div class="buttons d-flex justify-content-center gap-2 me-3">
+              <div class="plus-btn fw-bold fs-5">
+                <i class="fa-solid fa-plus"></i>
+              </div>
+              <div class="qtn text-center fw-bold fs-5">1</div>
+              <div class="minus-btn text-center fw-bold fs-5">
+                <i class="fa-solid fa-minus"></i>
+              </div>
+            </div>
+            <button class="btn btn-danger remove-item" type="button">REMOVE</button>
+          </div>
+        </div>
+        <div class="cart-row">
+          <div class="cart-item cart-column">
+            <img class="cart-item-image" src="content/assets/images/products/audi-rs-sedan.webp" width="100"
+              height="100">
+            <span class="cart-item-title">Album 3</span>
+          </div>
+          <span class="cart-price cart-column">$9.99</span>
+          <div class="cart-quantity cart-column">
+            <input class="cart-quantity-input" type="number" value="2">
+            <button class="btn btn-danger remove-item" type="button">REMOVE</button>
+          </div>
+        </div> -->
+      </div>
+      <div class="cart-total">
+        <strong class="cart-total-title">Total:</strong>
+        <span class="cart-total-price">$0</span>
+      </div>
+      <button class="btn btn-primary btn-purchase" type="button" onclick="purchaseClicked()">PURCHASE</button>
+    </section>
+
+  </section>
+  <footer class="first-bg-nav">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-4 col-12">
+
+          <div class="footer__logo border-bottom mt-4 pb-4">
+           <a href="index.html">
+            <img src="content/assets/images/logo/logo-white.png" class="w-100" alt="Logo">
+           </a>
+          </div>
+          <h4 class="mt-4 text-white-50">We are innovative, automotive-focused dreamers with a desire to be pioneers
+            in this space.</h4>
+
+        </div>
+        <div class="col-lg-3 col-md-4 col-12">
+          <h4 class="text-center mt-3 ">Our Linkes</h4>
+          <div class="footer__links d-flex flex-column align-items-center text-center fs-5 p-4">
+            <a href="index.html">Home</a>
+            <a href="index.html#services">services</a>
+            <a href="index.html#Categories">Categories</a>
+            <a href="accessory.html">Accessories</a>
+            <a href="index.html#About">About US</a>
+            <a href="index.html#Contact">Contact</a>
+            <a href="cart.html">Cart</a>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-12">
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <h4 class="text-center mt-4">Photo Gallery</h4>
+
+                <div class="footer__photogallery d-flex flex-wrap justify-content-center gap-2">
+                  <div class="footer__photogallery__img">
+                    <img src="content/assets/images/footer/o.jpg" alt="photo gallery" width="50" height="50">
+                  </div>
+                  <div class="footer__photogallery__img">
+                    <img src="content/assets/images/footer/qq.jpg" alt="photo gallery" width="50" height="50">
+                  </div>
+                  <div class="footer__photogallery__img">
+                    <img src="content/assets/images/footer/v.jpg" alt="photo gallery" width="50" height="50">
+                  </div>
+                  <div class="footer__photogallery__img">
+                    <img src="content/assets/images/footer/w.jpg" alt="photo gallery" width="50" height="50">
+                  </div>
+                  <div class="footer__photogallery__img">
+                    <img src="content/assets/images/footer/cadillac.jpg" alt="photo gallery" width="50" height="50">
+                  </div>
+                  <div class="footer__photogallery__img">
+                    <img src="content/assets/images/footer/mercedes.jpg" alt="photo gallery" width="50" height="50">
+                  </div>
+                  <div class="footer__photogallery__img">
+                    <img src="content/assets/images/footer/nissan_altima.jpeg" alt="photo gallery" width="50"
+                      height="50">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-lg-3 col-md-4 col-12">
+          <div class="footer__social-icon">
+            <div class="container">
+              <div class="row">
+                <h4 class="text-center mt-4 mb-4">SOCIAL NETWORK</h4>
+                <ul class="ul-social-icon list-unstyled d-flex justify-content-around fs-2">
+                  <li><a href="https://www.facebook.com/" class="facebook"><i class="fab fa-facebook"></i></a></li>
+                  <li><a href="https://www.instagram.com/" class="instagram"><i class="fab fa-instagram"></i></a></li>
+                  <li><a href="https://www.twitter.com/" class="twitter"><i class="fab fa-twitter"></i></a></li>
+                  <li><a href="https://www.youtube.com/" class="youtube"><i class="fab fa-youtube"></i></a></li>
+              </div>
+            </div>
+            </ul>
+
+
+
+          </div>
+          <div class="footer__form-subscribe text-center">
+            <h4>subscribe</h4>
+            <form>
+              <div class="input-field position-relative">
+                <input type="email" name="EMAIL" placeholder="Enter Your E-mail" required>
+                <button type="submit" class="subscribe-btn">
+                  <i class="fa-solid fa-wifi"></i>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+
+
+
+
+
+
+
+  <script src="content/js/main.js"></script>
+  <script src="content/js/cart.js"></script>
+  <script src="content/js/vendors/alert.js"></script>
+  <script src="content/js/vendors/all.min.js"></script>
+  <script src="content/js/vendors/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

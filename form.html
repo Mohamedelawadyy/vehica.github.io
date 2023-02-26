@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration form</title>
+    <link rel="stylesheet" href="content/css/style-log.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  </head>
+
+  <body>
+   <main>
+      <div class="wrapper signform">
+         <form action="#">
+            <h1>sign up</h1>
+            <div class="single-input">
+               <input type="text" autocomplete="name" required id="fname">
+               <label for="fname">FirstName</label>
+            </div>
+            <div class="single-input">
+               <input type="text" autocomplete="family-name" required id="lname">
+               <label for="lname">Lastname</label>
+            </div>
+            <div class="single-input">
+               <input type="text" autocomplete="username" required id="username">
+               <label for="username">user-Name</label>
+            </div>
+            <div class="single-input">
+               <input type="email" autocomplete="email" required id="email">
+               <label for="email">E-mail</label>
+            </div>
+            <div class="single-input">
+               <input type="password" required autocomplete="new-password" class="passInput" id="pass" >
+               <label for="password">Password</label>
+               <span class="input-icon" role="button" title="veiw password" id="passBtn">
+                  <i class="fa fa-eye fa-fw" aria-hidden="true"></i>
+                </span>
+            </div>
+            <div class="single-input">
+               <input type="password" required autocomplete="new-password" class="passInput" id="rpass">
+               <label for="password">Re-enter your password</label>
+               <span class="input-icon" role="button" title="veiw password" id="passBtn">
+                  <i class="fa fa-eye fa-fw" aria-hidden="true"></i>
+                </span>
+            </div>
+            <div class="sub-btn">
+               <button class="sub-btn" type="submit">Submit</button>
+            </div>
+            <div class="account-have">
+               <a href="#">
+                  Forget password
+               </a>
+               <a href="#index.html" class="tolog">
+                  Have an account please Login
+               </a>
+            </div>
+         </form>
+      </div>
+      <div class="wrapper logform">
+         <form action="#">
+            <h1>Log in</h1>
+            <div class="single-input">
+               <input type="text" autocomplete="username" required id="logusername">
+               <label for="username">user-Name</label>
+            </div>
+            <div class="single-input">
+               <input type="password" required autocomplete="password" class="passInput2" id="logpass" >
+               <label for="password">Password</label>
+               <span class="input-icon" role="button" title="veiw password" id="passBtn2">
+                  <i class="fa fa-eye fa-fw" aria-hidden="true"></i>
+                </span>
+            </div>
+            <div class="sub-btn">
+               <button class="sub-btn login" type="submit">Submit</button>
+            </div>
+            <div class="account-have">
+               <a href="#">
+                  Forget password
+               </a>
+               <a href="#" class="tosign">
+                  you haven't an account? sign in now
+               </a>
+            </div>
+         </form>
+      </div>
+   </main>
+   <script src="content/js/vendors/alert.js"></script>
+    <script src="content/js/sign.js"></script>
+  </body>
+</html>
